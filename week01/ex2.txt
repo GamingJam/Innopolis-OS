@@ -1,0 +1,28 @@
+    1  cd mnt
+    2  cd mnt/c
+    3  cd /mnt
+    4  cd c
+    5  /cd Users
+    6  cd users
+    7  cs jameel
+    8  cd jameel
+    9  cd desktop
+   10  cd wsl
+   11  mkdir week1
+   12  cd week1
+   13  gcc
+   14  sudo apt install fcc
+   15  sudo apt install gcc
+   16  gcc
+   17  sudo apt-get update gcc
+   18  sudo apt-get update
+   19  sudo apt install gcc
+   20  gcc
+   21  ls /usr/bin/ | grep gcc | sort -r
+   22  ls /usr/bin/ | grep gcc | sort -r > list.txt 
+   23  ls
+   24  cat list.txt
+   25  history
+   26  history > ex2.txt
+   27  ls /usr/bin/ | grep gcc | sort -r > ex1.txt 
+   28  history > ex2.txt
