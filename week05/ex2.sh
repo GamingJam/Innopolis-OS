@@ -1,13 +1,13 @@
-printf "0\n" > input.txt
+printf "0\n" > output.txt
 
 while true
 do
-	while ! ln input.txt input.lock 2>/dev/null
+	while ! ln output.txt output.lock 2>/dev/null
 	do
 	    sleep 1
 	done
-	value=$(tail -1 input.txt)
+	value=$(tail -1 output.txt)
 	result=$(expr $value + 1)
-	echo $result>>input.txt
-	rm -f input.lock
+	echo $result>>output.txt
+	rm -f output.lock
 done
