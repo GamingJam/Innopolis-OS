@@ -1,0 +1,1 @@
+As virtual space and physical memory space are independent. Virtual addresses refer to the virtual memory that the process uses. Physical addresses refer to the physical memory.
