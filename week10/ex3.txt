@@ -1,0 +1,5 @@
+No output
+
+What does 660 mean for ex3.txt? - r&w for user and group, nothing for others
+What does 775 mean for ex3.txt? - all permissions granted for user and group, r&x for others
+What does 777 mean for ex3.txt? - all permissions granted for everybody
