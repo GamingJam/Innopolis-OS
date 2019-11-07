@@ -1,3 +1,3 @@
-gcc -DBUF_SIZE=1024 -DSYNC copy.c
-time ./a.out ex2.c ex2.c.copy
-rm ex2.c.copy a.out
+gcc -o copy.o -DBUF_SIZE=512 -DSYNC copy.c
+time ./copy.o ex2.c ex2.c.copy >>ex3.txt
+rm ex2.c.copy copy.o
