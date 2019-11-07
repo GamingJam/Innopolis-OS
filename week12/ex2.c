@@ -18,35 +18,35 @@ int main(int argc, char *argv[]) {
 	}
 
 	if (argc == 2) {
-		FILE *outFile = fopen(argv[1], "w");
+		FILE *output = fopen(argv[1], "w");
 
 		while (!feof(stdin)) {
 			char c;
 			scanf("%c", &c);
-			fprintf(outFile, "%c", c);
+			fprintf(output, "%c", c);
 			printf("%c", c);
 		}
 
-		fclose(outFile);
+		fclose(output);
 		return 0;
 	}
 
 	if (argc == 3) {
 		if (!(argv[1][0] == '-' && (argv[1][1] == 'a' || argv[1][1] == 'A'))) {
-			perror("Unknown argument or wrong order of arguments\n");
+			perror("Wrong argument\n");
 			return EINVAL;
 		}
 
-		FILE *outFile = fopen(argv[2], "a");
+		FILE *output = fopen(argv[2], "a");
 
 		while (!feof(stdin)) {
 			char c;
 			scanf("%c", &c);
-			fprintf(outFile, "%c", c);
+			fprintf(output, "%c", c);
 			printf("%c", c);
 		}
 
-		fclose(outFile);
+		fclose(output);
 		return 0;
 	}
 
